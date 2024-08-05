@@ -1,0 +1,280 @@
+/*Elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #7FA1C3;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  h3{
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+  h5{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  section {
+    width: 100%;
+    margin: 4.5rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  /*Classes*/
+  .label {
+    width: 18.75rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    line-height: 1.2;
+  }
+
+  /*Navigation Bar*/
+  nav {
+    width: 100%;
+    padding: 0.625rem;
+    border-bottom: #c3c4c6 1px solid;
+    background-color: #F5EDED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0.125rem 0.125rem 0.5rem gray;
+    z-index: 1;
+  }
+  
+  nav > * {
+    flex: 1 1 30%;
+  }
+  
+  nav .links ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    list-style: none;
+  }
+  
+  nav .links ul li {
+    transition: 0.4s all linear 0.2s;
+  }
+  
+  nav .links ul li:hover {
+    text-shadow: 0.125rem 0.125rem 0.5rem #a98a47;
+    transition: 0.4s all linear 0.2s;
+  }
+  
+  nav .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav .links ul {
+    justify-content: space-around;
+  }
+  
+  nav .links ul li {
+    margin: 0.75rem;
+  }
+  
+  nav .links ul li a {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  /*Header*/
+  .intro{
+    height: 30rem;
+    padding-top: 1rem;
+    background-image: url(./images/comedy\ club.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+  }
+  
+  .intro img{
+    width: 15rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .intro h1{
+    color: #021526;
+    margin-top: 10rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+  }
+
+  /*Main Section*/
+  #entertainers .summary{
+    padding: 0 1rem;
+  }
+
+  #entertainers .summary h2{
+    margin-bottom: 1rem;
+  }
+
+  #entertainers .summary p{
+    margin-bottom: 2rem;
+  }
+
+  #entertainers .comedians{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    margin-bottom: 1rem;
+  }
+
+  #entertainers .comedians .pic{
+    width: 95%;
+    height: 95%;
+  }
+
+  #entertainers .comedians .label{
+    margin-bottom: 2rem;
+  }
+
+  #events .events{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    line-height: 1.5;
+  }
+
+  #events .events h2{
+    margin-bottom: 1rem;
+  }
+
+  #events .events h4{
+    margin-bottom: 1rem;
+    text-decoration: underline;
+  }
+  
+  /* Footer*/
+  footer{
+    width: 100%;
+    font-size: 0.625rem;
+    font-weight: 300;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    text-shadow: 0.125rem 0.125rem 0.5rem gray;
+    background-color: #F5EDED;
+  }
+
+  /*Media queries*/
+@media only screen and (min-width: 841px) and (maxwidth: 960px) {
+    html {
+      font-size: 14px;
+    }
+  
+    * {
+      scroll-padding-top: 4rem;
+    }
+  }
+  
+  @media only screen and (min-width: 721px) and (max-width: 840px) {
+    html {
+      font-size: 12px;
+    }
+  
+    * {
+      scroll-padding-top: 3.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 661px) and (max-width: 720px) {
+    html {
+      font-size: 11px;
+    }
+  
+    * {
+      scroll-padding-top: 3rem;
+    }
+  }
+  
+  @media only screen and (min-width: 541px) and (max-width: 660px) {
+    html {
+      font-size: 10px;
+    }
+  
+    * {
+      scroll-padding-top: 2.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 491px) and (max-width: 540px) {
+    html {
+      font-size: 9px;
+    }
+  
+    * {
+      scroll-padding-top: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 490px){
+      html{
+          font-size: 8px;
+      }
+  
+      *{
+          scroll-padding-top: 0;
+      }
+  
+      #entertainers,
+      #events{
+          padding-top: 1.75rem;
+          margin: 3rem auto 0 auto;
+      }
+  }
